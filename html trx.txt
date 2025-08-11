@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 अगस्त की शुभकामनाएं</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            position: relative;
+            background-image: linear-gradient(to bottom, #f0f8ff, #ffffff);
+        }
+        
+        /* Animated Tiranga Border */
+        .tiranga-border {
+            position: fixed;
+            background-size: 40px 40px;
+            z-index: 1;
+        }
+        
+        .border-top {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-image: linear-gradient(
+                90deg,
+                #ff9933 0%, #ff9933 33%,
+                #ffffff 33%, #ffffff 66%,
+                #138808 66%, #138808 100%
+            );
+            animation: borderScroll 10s linear infinite;
+        }
+        
+        .border-right {
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100vh;
+            background-image: linear-gradient(
+                180deg,
+                #ff9933 0%, #ff9933 33%,
+                #ffffff 33%, #ffffff 66%,
+                #138808 66%, #138808 100%
+            );
+            animation: borderScroll 15s linear infinite;
+        }
+        
+        .border-bottom {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-image: linear-gradient(
+                270deg,
+                #ff9933 0%, #ff9933 33%,
+                #ffffff 33%, #ffffff 66%,
+                #138808 66%, #138808 100%
+            );
+            animation: borderScroll 12s linear infinite;
+        }
+        
+        .border-left {
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100vh;
+            background-image: linear-gradient(
+                0deg,
+                #ff9933 0%, #ff9933 33%,
+                #ffffff 33%, #ffffff 66%,
+                #138808 66%, #138808 100%
+            );
+            animation: borderScroll 18s linear infinite;
+        }
+        
+        @keyframes borderScroll {
+            0% { background-position: 0 0; }
+            100% { background-position: 40px 40px; }
+        }
+        
+        .kite {
+            position: absolute;
+            width: 40px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            animation: fly 15s linear infinite;
+            opacity: 0.7;
+        }
+        
+        @keyframes fly {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 2;
+            border: 2px solid #000080;
+        }
+        
+        h1 {
+            color: #ff9933;
+            text-shadow: 1px 1px 2px #000080;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #138808;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .footer-message {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000080;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border: 2px dashed #ff9933;
+            border-radius: 10px;
+            line-height: 1.5;
+        }
+        
+        .tiranga-colors {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+        
+        .color-strip {
+            height: 10px;
+            width: 100%;
+        }
+        
+        .saffron { background-color: #ff9933; }
+        .white { 
+            background-color: #ffffff;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        .green { background-color: #138808; }
+        
+        .name-section {
+            margin: 20px 0;
+        }
+        
+        input, button {
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        input {
+            border: 2px solid #ff9933;
+            width: 200px;
+        }
+        
+        button {
+            background-color: #138808;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0e6e07;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: 15px 0;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .whatsapp-btn img {
+            width: 24px;
+            height: 24px;
+            border: none;
+            box-shadow: none;
+            margin: 0;
+        }
+        
+        /* AdMob Ad Container */
+        .ad-container {
+            margin: 15px auto;
+            width: 100%;
+            max-width: 320px;
+            min-height: 100px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- AdMob Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-7749331261064555"></script>
+</head>
+<body>
+
+<!-- Animated Tiranga Borders -->
+<div class="tiranga-border border-top"></div>
+<div class="tiranga-border border-right"></div>
+<div class="tiranga-border border-bottom"></div>
+<div class="tiranga-border border-left"></div>
+
+<div class="container">
+    <h1>🇮🇳 15 अगस्त की हार्दिक शुभकामनाएं 🇮🇳</h1>
+    
+    <!-- AdMob Banner Ad -->
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-app-pub-7749331261064555"
+             data-ad-slot="7202420673"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+    <div class="tiranga-colors">
+        <div class="color-strip saffron"></div>
+        <div class="color-strip white"></div>
+        <div class="color-strip green"></div>
+    </div>
+
+    <div id="flag-container">
+        <!-- Flag will load here automatically -->
+    </div>
+    
+    <div class="name-section">
+        <input type="text" id="senderName" placeholder="आपका नाम" value="भोला">
+        <button onclick="updateGreeting()">अपडेट करें</button>
+    </div>
+    
+    <div id="personalized-message" class="footer-message">
+        भोला की ओर से<br>15 अगस्त की हार्दिक शुभकामनाएं!<br>जय हिन्द! वंदे मातरम्!
+    </div>
+    
+    <button class="whatsapp-btn" onclick="shareOnWhatsApp()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        WhatsApp पर शेयर करें
+    </button>
+    
+    <div class="tiranga-colors">
+        <div class="color-strip saffron"></div>
+        <div class="color-strip white"></div>
+        <div class="color-strip green"></div>
+    </div>
+</div>
+
+<script>
+    // Create flying kites
+    function createKites() {
+        const kiteImages = [
+            'https://i.ibb.co/0jQ5Z0T/kite1.png',
+            'https://i.ibb.co/4W2Pz5K/kite2.png',
+            'https://i.ibb.co/0nQqY3X/kite3.png'
+        ];
+        
+        for(let i=0; i<12; i++) {
+            const kite = document.createElement('div');
+            kite.className = 'kite';
+            
+            const left = Math.random() * 100;
+            const delay = Math.random() * 15;
+            const duration = 10 + Math.random() * 20;
+            const size = 30 + Math.random() * 40;
+            const kiteType = Math.floor(Math.random() * kiteImages.length);
+            
+            kite.style.left = `${left}%`;
+            kite.style.animationDelay = `${delay}s`;
+            kite.style.animationDuration = `${duration}s`;
+            kite.style.width = `${size}px`;
+            kite.style.height = `${size * 1.25}px`;
+            kite.style.backgroundImage = `url(${kiteImages[kiteType]})`;
+            
+            document.body.appendChild(kite);
+        }
+    }
+    
+    // Load Indian flag
+    function loadFlag() {
+        const flagContainer = document.getElementById('flag-container');
+        const img = document.createElement('img');
+        img.alt = "भारतीय तिरंगा";
+        img.src = "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg";
+        flagContainer.appendChild(img);
+    }
+    
+    // Update greeting message
+    function updateGreeting() {
+        const name = document.getElementById('senderName').value || 'भोला';
+        document.getElementById('personalized-message').innerHTML = `
+            ${name} की ओर से<br>
+            15 अगस्त की हार्दिक शुभकामनाएं!<br>
+            जय हिन्द! वंदे मातरम्!
+        `;
+    }
+    
+    // Share on WhatsApp
+    function shareOnWhatsApp() {
+        const name = document.getElementById('senderName').value || 'भोला';
+        const message = `*${name} की ओर से 15 अगस्त की हार्दिक शुभकामनाएं!* 🎉🇮🇳\n\nजय हिन्द! वंदे मातरम्!\n\n${window.location.href.split('?')[0]}?sender=${encodeURIComponent(name)}`;
+        
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const whatsappUrl = isMobile 
+            ? `whatsapp://send?text=${encodeURIComponent(message)}` 
+            : `https://web.whatsapp.com/send?text=${encodeURIComponent(message)}`;
+        
+        window.open(whatsappUrl, '_blank');
+    }
+    
+    // Check URL for sender name
+    function checkUrlParams() {
+        const params = new URLSearchParams(window.location.search);
+        const sender = params.get('sender');
+        
+        if(sender) {
+            document.getElementById('senderName').value = sender;
+            updateGreeting();
+        }
+    }
+    
+    // Initialize everything when page loads
+    window.onload = function() {
+        createKites();
+        loadFlag();
+        checkUrlParams();
+        
+        // Initialize AdMob
+        if(typeof admob !== 'undefined') {
+            admob.banner.config({
+                id: 'ca-app-pub-7749331261064555/7202420673',
+                isTesting: false,
+                autoShow: true
+            });
+            admob.banner.prepare();
+        }
+    };
+</script>
+
+<!-- AdMob SDK (for mobile apps) -->
+<script src="https://cdn.jsdelivr.net/npm/cordova-admob@5.0.1/dist/admob.js"></script>
+<script>
+    document.addEventListener('deviceready', function() {
+        if(admob) {
+            admob.banner.config({
+                id: 'ca-app-pub-7749331261064555/7202420673',
+                isTesting: false,
+                autoShow: true
+            });
+            admob.banner.prepare();
+        }
+    }, false);
+</script>
+
+</body>
+</html>
